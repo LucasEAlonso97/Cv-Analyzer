@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analizador de Cv - Habilidades Tech-Core (2026-2030)</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo"><span></span></a>
+            <div class="nav-menu">
+                <a href="index.html">Analizador</a>
+                
+            </div>
+        </div>
+    </nav>
+
+    <header>
+        <h1>Análisis de Cv: Compatibilidad ATS</h1>
+        <p>Sube tu Cv (DOCX o PDF) para evaluar qué tan compatible es con los sistemas de filtrado (ATS)</p>
+    </header>
+
+    <main>
+        <section class="about-us">
+            <h2>Acerca de esta Herramienta</h2>
+            <p>Esta herramienta utiliza un algoritmo basado en las tendencias de contratación Tech-Core 2026-2030 para darte un análisis estratégico y diferenciado.</p>
+        </section>
+
+        <section class="upload-area">
+            <label for="positionSelect">Selecciona la posición a analizar:</label>
+            <select id="positionSelect">
+                <optgroup label="Desarrollo de Software">
+                    <option value="FULL_STACK" selected>Desarrollador Full-Stack</option>
+                    <option value="FRONTEND">Desarrollador Frontend</option>
+                    <option value="BACKEND">Desarrollador Backend</option>
+                </optgroup>
+                <optgroup label="Datos e Infraestructura">
+                    <option value="DATA_ENGINEER">Data Engineer</option>
+                    <option value="CLOUD">Cloud Engineer/Architect</option>
+                    <option value="MLOPS">MLOps Engineer</option>
+                </optgroup>
+                <optgroup label="Calidad y Seguridad">
+                    <option value="QA_AUTOMATION">QA Automation</option>
+                    <option value="QA_MANUAL">QA Manual</option>
+                    <option value="CYBERSECURITY">Ciberseguridad Analyst/Engineer</option>
+                </optgroup>
+                <optgroup label="Gestión de Producto">
+                    <option value="PRODUCT_MANAGER">Product Manager</option>
+                </optgroup>
+            </select>
+            
+            <div class="file-upload-container">
+                <input type="file" id="cvFile" accept=".docx, .pdf">
+                <span id="fileNameDisplay" class="file-name-display">Ningún archivo seleccionado.</span>
+            </div>
+            
+            <input type="email" id="userEmail" placeholder="Tu Email (Opcional)">
+
+            <div class="checkbox-container">
+                <input type="checkbox" id="sendEmailCheckbox" checked>
+                <label for="sendEmailCheckbox">Enviar mis resultados detallados por email.</label>
+            </div>
+
+            <button id="btnAnalizar">Analizar CV</button>
+        </section>
+
+        <div id="emailMessage" class="email-message"></div>
+
+        <section class="results-area" id="results">
+            <h2>Resultados del Análisis</h2>
+            <div id="percentage" class="percentage-box">Esperando Cv...</div>
+            <div id="scoreBreakdown" class="score-breakdown"></div>
+            <div id="feedback"></div>
+
+            <div id="dynamicTips" class="dynamic-tips">
+                <h3>💡 Próximo Objetivo: ¿Qué hacer ahora?</h3>
+            </div>
+            
+            <div class="cta-container">
+                <a href="https://www.linkedin.com/company/liketalent/posts/?feedView=all" class="cta-link">
+                    <button class="cta-button">🔗Info</button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.16.105/pdf.min.js"></script>
+    <script src="https://unpkg.com/mammoth@1.4.15/mammoth.browser.min.js"></script>
+
+    <script type="module" src="assets/js/main.js"></script>
+</body>
+</html>

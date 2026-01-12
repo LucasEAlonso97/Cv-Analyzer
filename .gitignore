@@ -1,0 +1,26 @@
+# Extensiones de archivos de sistema
+.DS_Store
+Thumbs.db
+
+# Carpetas de configuración de VS Code
+.vscode/
+
+# Archivos de respaldo de editores
+*.swp
+*.bak
+
+# Si en el futuro instalas librerías con Node.js
+node_modules/
+npm-debug.log*
+
+# Archivos comprimidos (como el .zip que me pasaste)
+*.zip
+*.rar
+
+# Logs de errores
+logs
+*.log
+
+# Ocultar panel de administración
+login.html
+dashboard.html
