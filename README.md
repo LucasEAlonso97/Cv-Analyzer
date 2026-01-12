@@ -15,7 +15,7 @@ Sistema inteligente de análisis de currículums diseñado para optimizar el cri
 - **Seguridad:** SessionStorage & LocalStorage para persistencia de leads.
 
 ## 🛠️ Instalación
-1. Clona el repositorio: `git clone https://github.com/tu-usuario/like-talent.git`
+1. Clona el repositorio: `git clone https://github.com/tu-usuario/Cv-Analyzer.git`
 2. Abre `index.html` en tu navegador.
 *No requiere dependencias de servidor (SaaS Ready).*
 
